@@ -4,13 +4,48 @@
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
+    <title>Bacon's Cipher</title>
+    <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-    <script src="./renderer.js"></script>
+      <article>
+          <h1>Bacon's Cipher</h1>
+          <p>Current theme source: <strong id="theme-source">System</strong>
+          <img src="./assets/SirBaconGraphic.jpg" alt="Sir. Frances Bacon is a Bacon Frame" />
+          <h2>Click the Button For The Type Of</h2>
+          <h2> Encryption or Dycryption You Want!</h2>
+          <p class="explination">When encrypting avoid using symbols like "?@$}{" ect. or numbers, <br> since the system doesn't know what to do with them</p>
+          <p class="explination">When entering a bassic decryption, enter your message like this: <br> "aaaaa aaaab aaaba" (ABC)</p>
+          <br>
+          <div>
+              <a class="transparent" onclick="encrypt(false)">
+                  <p><span class="bg"></span><span class="base"></span><span class="text">Basic Encryption</span></p>
+              </a>
+              <a class="transparent" onclick="decrypt()">
+                  <p><span class="bg"></span><span class="base"></span><span class="text">Basic Decryption</span></p>
+              </a>
+          </div>
+          <div>
+              <a class="transparent" onclick="encrypt(true)">
+                  <p><span class="bg"></span><span class="base"></span><span class="text">Advanced Encryption</span></p>
+              </a>
+              <a class="transparent" onclick="dycryptAdvanced()">
+                  <p><span class="bg"></span><span class="base"></span><span class="text">Advanced Decryption</span></p>
+              </a>
+          </div>
+          <br>
+              <div class="output">
+                  <span id="input"></span>
+                  <span id="working"></span>
+                  <span id="done"></span>
+                  <span id="output"></span>
+                  <span id="advInput"></span>
+                  <span id="advWorking"></span>
+                  <span id="advDone"></span>
+                  <span id="advOutput"></span>
+              </div>
+      </article>
+      <script src="./renderer.js"></script>
+      <script src="./cipher-stuff.js"></script>
   </body>
 </html>
