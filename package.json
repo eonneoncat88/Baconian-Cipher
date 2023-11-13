@@ -1,0 +1,33 @@
+{
+  "name": "bacons-cipher",
+  "version": "1.0.0",
+  "description": "An implementation of Bacon's Cipher",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eonneoncat88/Baconian-Cipher.git"
+  },
+  "author": "eonneoncat88",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eonneoncat88/Baconian-Cipher/issues"
+  },
+  "homepage": "https://github.com/eonneoncat88/Baconian-Cipher#readme",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.4.2",
+    "@electron-forge/maker-deb": "^6.4.2",
+    "@electron-forge/maker-rpm": "^6.4.2",
+    "@electron-forge/maker-squirrel": "^6.4.2",
+    "@electron-forge/maker-zip": "^6.4.2",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
+    "electron": "^27.0.4"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  }
+}
